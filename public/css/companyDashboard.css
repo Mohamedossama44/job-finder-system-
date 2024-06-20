@@ -1,0 +1,188 @@
+.company{
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all .2s linear;
+}
+.cbox-container{
+    min-height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cbox-container .cbox{
+    width: 700px;
+    background: rgb(44,110,110);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 10px #0007;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+.cbox-container .cbox .cimage{
+    text-align: center;
+    padding: 60px 0;
+    width: 260px;
+    background: #0005;
+    clip-path: polygon(0 0, 80% 0, 100% 15%, 100% 85%, 76% 100%, 0 100%);
+}
+.cbox-container .cbox .cimage img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px coral;
+    object-fit: cover;
+}
+.cbox-container .cbox .cContent{
+    display: flex;
+    padding: 0 10px;
+}
+.cbox-container .cbox .cContent .cicons{
+    background: #fff;
+    margin: 0 10px;
+}
+.cbox-container .cbox .cContent .cicons i{
+    font-size: 20px;
+    margin: 10px 13px;
+    color: coral;
+    display: block;
+}
+.cbox-container .cbox .cContent .cicons i:first-child{
+    margin-bottom: 70px;
+}
+.cbox-container .cbox .cContent .cinfo .ctitle{
+    font-size: 29px;
+    color: #fff;
+    padding: 5px 0;
+    text-transform: capitalize;
+}
+.cbox-container .cbox .cContent .cinfo .cpost{
+    display: block;
+    font-size: 18px;
+    color: #ccc;
+    padding-bottom: 32px;
+}
+.cbox-container .cbox .cContent .cinfo h2{
+    display: block;
+    color: #aaa;
+    padding: 6px 0;
+}
+.cbox-container .cbox .cContent .cinfo h2:hover{
+    color: #fff;
+}
+/* job post style */
+.pcontainer{
+    min-height: 50vh;
+    width: 100vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.pcard{
+    min-height: 50px;
+    width: 320px;
+    background: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    padding-top: 5px;
+    margin: 20px;
+    letter-spacing: 1px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+}
+.pcard h1{
+    font-size: 35px;
+    padding: 20px 0;
+    color: #444;
+}
+.pcard h3{
+    font-size: 15px;
+    color: #666;
+}
+.pcard h3 span{
+    color: var(--blue);
+}
+.pcard::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    background: rgba(160, 160, 160, .1);
+    z-index: -1;
+}
+.pcard::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #a6e7ff;
+    z-index: -2;
+    clip-path: circle(20% at 90% 10%);
+}
+.pcard:hover::after{
+    clip-path: circle(100%);
+}
+/*applicants style*/
+.tcard{
+    min-height: 50px;
+    width: 950px;
+    background: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    padding-top: 5px;
+    margin: 20px;
+    letter-spacing: 1px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+}
+.tcard h1{
+    font-size: 35px;
+    padding: 20px 0;
+    color: #444;
+}
+.tcard h3{
+    font-size: 15px;
+    color: #666;
+}
+.tcard h3 span{
+    color: var(--blue);
+}
+@media(max-width: 980px){
+    .cbox-container {
+        min-height: 70vh;
+    }
+}
+@media (max-width: 650px){
+    .cbox-container {
+        min-height: 100vh;
+    }
+    .cbox-container .cbox{
+        flex-flow: column;
+        width: 340px;
+    }
+    .cbox-container .cbox .cimage{
+        height: 200px;
+        width: 100%;
+        padding: 40px 0;
+        clip-path: polygon(0 0, 100% 0, 100% 70%,80% 100%,20% 100%, 0 70%);
+    }
+    .cbox-container .cbox .cimage img{
+        height: 120px;
+        width: 120px;
+    }
+    .cbox-container .cbox .cContent{
+        padding: 30px 5px;
+    }
+    .pcontainer{
+        min-height: 75vh;
+    }
+}

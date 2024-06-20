@@ -1,0 +1,75 @@
+.signup{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 4rem;
+}
+
+.signup form{
+    background-color: wheat;
+    /* background-image: url(../images/loginback.jpg); */
+    flex: 1 1 40rem;
+    padding: 10rem 10rem;
+    border: .1rem solid rgba(0, 0, 0, .2);
+    border-radius: 10rem;
+    box-shadow: 0 .5rem 1rem rgba(219, 125, 3, 0.9);
+}
+
+.signup form .inputBox{
+    position: relative;
+}
+
+.signup form .inputBox input, .signup form .inputBox textarea{
+    width: 100%;
+    background: none;
+    color: #666;
+    margin: 1.5rem 0;
+    padding: .5rem 0;
+    font-size: 1.7rem;
+    border-bottom: .1rem solid rgba(0, 0, 0, .1);
+    text-transform: none;
+}
+
+.signup form .inputBox textarea{
+    resize: none;
+    height: 13rem;
+}
+
+.signup form .inputBox label{
+    position: absolute;
+    top: -.5rem;
+    left: 0;
+    font-size: 1.7rem;
+    color: #666;
+    transition: .2s linear;
+}
+.signup form .inputBox input:focus ~ label,.signup form .inputBox textarea:focus ~ label{
+    color: var(--blue);
+}
+.alignA {
+    color: var(--blue);
+}
+.alignA:hover{
+    color: var(--purple);
+}
+.signup form p{
+    font-size: 1.7rem;
+}
+.requiredF{
+    color: #BD0000;
+}
+
+.danger {
+    color: #D8000C;
+    background-color: #FFD2D2;
+    font-size: 1.7rem;
+    padding: 20px;
+}
+.success {
+    color: #4F8A10;
+    background-color: #DFF2BF;
+    font-size: 1.7rem;
+    padding: 20px;
+}

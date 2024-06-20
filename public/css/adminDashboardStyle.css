@@ -1,0 +1,92 @@
+.container {
+    /*DISPLAY FLEX KANET BETKHALY EL HAGAT TAHT BA3DAHA*/
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 4rem;
+}
+.stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background: rgb(40,102,110);
+    flex: 1 1 40rem;
+    padding: 2rem 3rem;
+    border: .1rem solid rgba(0, 0, 0, .2);
+    border-radius: 5rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    margin-bottom: 5rem;
+    text-align: center; /* Center align text (including buttons) */
+}
+
+.buttons {
+    margin-top: 1rem;
+    padding: .8rem 3rem;
+    border-radius: 5rem;
+    background: var(--gradient);
+    font-size: 1.7rem;
+    /* color: rgb(181, 182, 130); */
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    transition: all .3s linear;
+    margin-right: 2rem;
+}
+
+.buttons:hover {
+    transform: scale(1.09);
+    background-color: rgb(181, 182, 130);
+}
+
+.totalCompanies {
+    margin-bottom: 10rem;
+    color: white;
+}
+
+#no_of_companies {
+    margin-left: 1rem;
+}
+
+#list {
+    display: none;
+}
+.content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+}
+
+.content-table thead tr {
+    background-color: rgb(181, 182, 130);
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    font-size:x-large;
+}
+
+.content-table th, .content-table td {
+    padding: 12px 15px;
+    border-bottom: 5px solid rgb(181, 182, 130);
+    border-right: 5px solid rgb(181, 182, 130);
+    
+}
+
+.content-table th:last-child, .content-table td:last-child {
+    border-right: none;
+}
+
+.content-table tbody tr {
+    font-size: 2em;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
